@@ -1865,7 +1865,7 @@ struct A {
   A(int) {}
   A(int, int) {}
   A(int, int, int) {}
-  A(std::initializer_list<int>) {}
+  A(std::initializer_list<int>) {} //regresar falto ver initializer_list
 };
 
 A a {0, 0}; // calls A::A(std::initializer_list<int>)
